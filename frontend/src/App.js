@@ -202,7 +202,10 @@ const App = () => {
             Join the Z47 Enterprise AI Hackathon and compete for $100,000 in prizes while solving real-world challenges with cutting-edge artificial intelligence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="cta-button bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 hover:scale-105">
+            <button 
+              onClick={() => scrollToSection('apply')}
+              className="cta-button bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 hover:scale-105"
+            >
               Apply Now
             </button>
             <a href="#about" className="text-gray-700 hover:text-orange-500 font-medium text-lg transition-colors duration-300 flex items-center">
