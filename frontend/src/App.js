@@ -37,6 +37,16 @@ const App = () => {
     });
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   const mentors = [
     { name: "Dr. Sarah Chen", title: "AI Research Director", image: "https://images.unsplash.com/photo-1649767662275-b1c8ff96cc28" },
     { name: "Marcus Rodriguez", title: "Tech Innovation Lead", image: "https://images.unsplash.com/photo-1649767662275-b1c8ff96cc28" },
