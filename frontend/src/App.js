@@ -145,7 +145,12 @@ const App = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-gray-600 hover:text-orange-500 transition-colors">About</a>
               <a href="#timeline" className="text-gray-600 hover:text-orange-500 transition-colors">Timeline</a>
-              <a href="#apply" className="text-gray-600 hover:text-orange-500 transition-colors">Apply</a>
+              <button 
+                onClick={() => scrollToSection('apply')}
+                className="text-gray-600 hover:text-orange-500 transition-colors cursor-pointer"
+              >
+                Apply
+              </button>
               <a href="#mentors" className="text-gray-600 hover:text-orange-500 transition-colors">Mentors</a>
               <a href="#faq" className="text-gray-600 hover:text-orange-500 transition-colors">FAQ</a>
             </div>
